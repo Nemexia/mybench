@@ -1,7 +1,6 @@
 #include "mybench.h"
 #include <cmath>
 #include <iostream>
-#include <ostream>
 
 void Benchmark::update_stats(double duration) {
   ++rounds;
