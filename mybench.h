@@ -12,6 +12,7 @@ private:
   double sum_sqdiff{0.0};
 
   void update_stats(double duration);
+  void print() const;
 
 public:
   template <typename Func>
@@ -29,6 +30,4 @@ public:
     }
     print();
   }
-
-  void print() const;
 };
