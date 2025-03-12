@@ -13,6 +13,7 @@ private:
 
   void update_stats(double duration);
   void print() const;
+  void reset();
 
 public:
   template <typename Func>
@@ -29,5 +30,6 @@ public:
       update_stats(static_cast<double>(duration) / cycles_todo);
     }
     print();
+    reset();
   }
 };

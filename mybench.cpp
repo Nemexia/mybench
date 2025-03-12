@@ -23,3 +23,12 @@ void Benchmark::print() const {
   std::cout << "round:\t" << rounds << "\nmean:\t" << mean << "\nstd:\t" << std
             << "\nmin:\t" << min << "\nmax:\t" << max << "\n\n";
 }
+
+void Benchmark::reset() {
+  rounds = 0;
+  mean = 0;
+  std = 0;
+  min = 0;
+  max = 0;
+  sum_sqdiff = 0;
+}
