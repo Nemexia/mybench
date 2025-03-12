@@ -26,8 +26,8 @@ public:
           std::chrono::duration_cast<std::chrono::microseconds>(end - start)
               .count();
       update_stats(static_cast<double>(duration) / cycles_todo);
-      print();
     }
+    print();
   }
 
   void print() const;
